@@ -1,0 +1,34 @@
+{
+  "name": "actionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild renderer.js --bundle --outfile=renderer.bundle.js --loader:.js=jsx",
+    "start": "npm run build && electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manish-jangra/actionary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/manish-jangra/actionary/issues"
+  },
+  "homepage": "https://github.com/manish-jangra/actionary#readme",
+  "dependencies": {
+    "electron": "^36.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  }
+}
